@@ -8,4 +8,4 @@
 
 ## 목차
 
-1. [Navbar](https://github.com/Kimginam97/WebSitePortpolio/tree/master/Summary)
+1. [Navbar](https://github.com/Kimginam97/WebSitePortpolio/blob/master/Summary/1.Navbar.md)
