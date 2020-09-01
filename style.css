@@ -11,7 +11,9 @@
   --color-light-grey: #7c7979;
   --color-blue: #73aace;
   --color-dark-blue: #304b5e;
+  --color-light-blue: #98cbec;
 
+  --color-dark-yellow: #b9ac63;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
@@ -125,4 +127,42 @@ button {
 
 .navbar__menu__item:hover {
   background-color: var(--color-dark-blue);
+}
+
+/* Introduce */
+#Introduce {
+  background: url("imgs/Introbackground.jpg") center/cover no-repeat;
+  padding: 40px;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.Intro__container {
+  padding-top: 45px;
+}
+
+.Intro__avatar {
+  width: 220px;
+  height: 250px;
+  border-radius: 20%;
+  border: 2px solid --color-light-white;
+}
+
+.Intro__title,
+.Intro__description {
+  color: white;
+}
+
+.Intro__contact {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
+}
+
+.Intro__contact:hover {
+  background-color: var(--color-dark-yellow);
 }
