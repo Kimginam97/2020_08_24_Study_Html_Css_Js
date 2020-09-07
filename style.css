@@ -3,7 +3,7 @@
   /* Color */
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
-  --color-dark-white: #bdbdbd;
+  --color-dark-white: #d1cece;
   --color-pink: #fe918d;
   --color-dark-pink: #ff6863;
   --color-dark-grey: #4d4d4d;
@@ -13,7 +13,7 @@
   --color-dark-blue: #304b5e;
   --color-light-blue: #98cbec;
 
-  --color-dark-yellow: #b9ac63;
+  --color-dark-yellow: #afa56e;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
@@ -95,6 +95,18 @@ button {
   outline: none;
 }
 
+/* Section common */
+.section {
+  padding-top: 50px;
+  text-align: center;
+  margin: auto;
+}
+
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
 /* Navbar */
 #navbar {
   display: flex;
@@ -165,4 +177,31 @@ button {
 
 .Intro__contact:hover {
   background-color: var(--color-dark-yellow);
+}
+
+/* Study */
+#studys {
+  background-color: var(--color-dark-white);
+  margin: 18px;
+}
+
+.studys {
+  margin: 40px;
+}
+
+.study {
+  display: flex;
+}
+
+.study__icon {
+  margin: 18px;
+  font-size: 80px;
+  color: var(--color-pink);
+}
+
+.study__description {
+  margin: 18px;
+
+  background-color: var(--color-white);
+  border-radius: var(--size-border-radius);
 }
