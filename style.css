@@ -109,12 +109,20 @@ button {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-blue);
+  background-color: transparent;
   color: var(--color-light-white);
   padding: 16px;
+  transition: var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-blue);
+  padding: 8px;
 }
 
 .navbar__menu {
@@ -145,7 +153,7 @@ button {
 #Introduce {
   background: url("imgs/Introbackground.jpg") center/cover no-repeat;
   padding: 40px;
-  padding-top: 80px;
+  padding-top: 120px;
   text-align: center;
 }
 
