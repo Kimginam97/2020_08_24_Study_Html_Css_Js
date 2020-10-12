@@ -15,3 +15,26 @@ document.addEventListener("scroll", () => {
     navbar.classList.remove("navbar--dark");
   }
 });
+
+//2.선택하면 해당 셀렉터 위치에 이동한다
+const navbarMenu = document.querySelector(".navbar__menu");
+
+navbarMenu.addEventListener("click", (event) => {
+  const target = event.target;
+
+  //data-link 값을 link에 넣어둔다
+  const link = target.dataset.link;
+
+  if (link == null) {
+    return;
+  }
+
+  //scrollTo 함수 활용
+  //수직정렬 block 수평정렬 inline
+  const scrollTo = document.querySelector(link);
+  scrollTo.scrollIntoView({
+    behavior: "smooth",
+    block: "center",
+    inline: "nearest",
+  });
+});

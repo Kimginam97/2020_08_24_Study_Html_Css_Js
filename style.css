@@ -98,6 +98,7 @@ button {
 /* Section common */
 .section {
   padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
   margin: auto;
 }
@@ -118,6 +119,7 @@ button {
   color: var(--color-light-white);
   padding: 16px;
   transition: var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
