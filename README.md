@@ -16,5 +16,5 @@
 6. [Contact](https://github.com/Kimginam97/WebSitePortpolio/blob/master/Summary/6.Contact.md)
 
 ### JS
-1. [Navbar__windowscrollY](https://github.com/Kimginam97/WebSitePortpolio/blob/master/Summary/JS.1Navbar.md)
-
+1. [Navbar WindowscrollY](https://github.com/Kimginam97/WebSitePortpolio/blob/master/Summary/JS.1Navbar.md)
+2. [Navbar ScrollIntoView](https://github.com/Kimginam97/WebSitePortpolio/blob/master/Summary/JS.2ScrollTo.md)
