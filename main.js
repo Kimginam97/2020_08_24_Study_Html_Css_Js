@@ -31,10 +31,22 @@ navbarMenu.addEventListener("click", (event) => {
 
   //scrollTo 함수 활용
   //수직정렬 block 수평정렬 inline
-  const scrollTo = document.querySelector(link);
-  scrollTo.scrollIntoView({
-    behavior: "smooth",
-    block: "center",
-    inline: "nearest",
-  });
+  // const scrollTo = document.querySelector(link);
+  // scrollTo.scrollIntoView({
+  //   behavior: "smooth",
+  //   block: "center",
+  //   inline: "nearest",
+  // });
+  scrollIntoView(link);
 });
+
+//3.contact me 클릭시 contact로 이동
+const IntroContactBtn=document.querySelector('.Intro__contact');
+IntroContactBtn.addEventListener('click',()=>{
+  scrollIntoView('#contact');
+})
+
+function scrollIntoView(selector){
+  const scrollTo=document.querySelector(selector);
+  scrollTo.scrollIntoView({behavior:'smooth'});
+}
