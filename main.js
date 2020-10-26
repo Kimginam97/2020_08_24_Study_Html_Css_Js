@@ -46,7 +46,29 @@ IntroContactBtn.addEventListener('click',()=>{
   scrollIntoView('#contact');
 })
 
+//4.홈화면이 점점 옅어진다
+const Intro =document.querySelector('.Intro__container');
+const IntroHeight=Intro.getBoundingClientRect().height;
+document.addEventListener('scroll',()=>{
+  Intro.style.opacity=1-window.scrollY/IntroHeight;
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function scrollIntoView(selector){
   const scrollTo=document.querySelector(selector);
   scrollTo.scrollIntoView({behavior:'smooth'});
 }
+
