@@ -53,8 +53,19 @@ document.addEventListener('scroll',()=>{
   Intro.style.opacity=1-window.scrollY/IntroHeight;
 })
 
+//5.위로 올라가는 버튼
+const arroUp=document.querySelector('.arrow-up');
+document.addEventListener('scroll',()=>{
+    if(window.scrollY>navbarHeight/2){
+        arroUp.classList.add('visible');
+    } else{
+        arroUp.classList.remove('visible');
+    }
+});
 
-
+arroUp.addEventListener('click',()=>{
+  scrollIntoView('#Introduce')
+})
 
 
 
