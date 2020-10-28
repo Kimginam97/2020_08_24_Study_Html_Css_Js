@@ -67,8 +67,36 @@ arroUp.addEventListener('click',()=>{
   scrollIntoView('#Introduce')
 })
 
+//Portfolio
+const workBtnContainer=document.querySelector('.Portfolio__categories');
+const projectContainer=document.querySelector('.Portfolio__projects');
+const projects=document.querySelectorAll('.project');
+workBtnContainer.addEventListener('click',(e)=>{
+    const filter=e.target.dataset.filter || e.target.parentNode.dataset.filter;
+    if(filter==null){
+        return;
+    }
 
+    // Remove Selectio from the previous item select the new one
+    // const active=document.querySelector('.category__btn.selected');
+    // active.classList.remove('selected');
+    // const target=
+    // e.target.nodeName==='BUTTON' ? e.target : e.target.parentNode;
 
+    // target.classList.add('selected');
+
+    projectContainer.classList.add('anim-out');
+    setTimeout(()=>{
+        projects.forEach((project)=>{
+            if(filter== '*' || filter==project.dataset.type){
+                project.classList.remove('invisible');
+            } else{
+                project.classList.add('invisible');
+            }
+        });
+        projectContainer.classList.remove('anim-out');
+    },300);
+  });
 
 
 
@@ -80,6 +108,6 @@ arroUp.addEventListener('click',()=>{
 
 function scrollIntoView(selector){
   const scrollTo=document.querySelector(selector);
-  scrollTo.scrollIntoView({behavior:'smooth'});
+  scrollTo.scrollIntoView({behavior:'smooth',block: "center"});
 }
 
