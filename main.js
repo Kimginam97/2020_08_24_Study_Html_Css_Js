@@ -28,7 +28,7 @@ navbarMenu.addEventListener("click", (event) => {
   if (link == null) {
     return;
   }
-
+  navbarMenu.classList.remove('open');
   //scrollTo 함수 활용
   //수직정렬 block 수평정렬 inline
   // const scrollTo = document.querySelector(link);
@@ -67,7 +67,7 @@ arroUp.addEventListener('click',()=>{
   scrollIntoView('#Introduce')
 })
 
-//Portfolio
+//6. Portfolio 필터링
 const workBtnContainer=document.querySelector('.Portfolio__categories');
 const projectContainer=document.querySelector('.Portfolio__projects');
 const projects=document.querySelectorAll('.project');
@@ -78,12 +78,12 @@ workBtnContainer.addEventListener('click',(e)=>{
     }
 
     // Remove Selectio from the previous item select the new one
-    // const active=document.querySelector('.category__btn.selected');
-    // active.classList.remove('selected');
-    // const target=
-    // e.target.nodeName==='BUTTON' ? e.target : e.target.parentNode;
+    const active=document.querySelector('.category__btn.selected');
+    active.classList.remove('selected');
+    const target=
+    e.target.nodeName==='BUTTON' ? e.target : e.target.parentNode;
 
-    // target.classList.add('selected');
+    target.classList.add('selected');
 
     projectContainer.classList.add('anim-out');
     setTimeout(()=>{
@@ -98,7 +98,12 @@ workBtnContainer.addEventListener('click',(e)=>{
     },300);
   });
 
-
+//7.Navbar 토글 버튼
+// Navbar toggle button for small screen
+const navbarToggleBtn=document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click',()=>{
+    navbarMenu.classList.toggle('open');
+});
 
 
 
