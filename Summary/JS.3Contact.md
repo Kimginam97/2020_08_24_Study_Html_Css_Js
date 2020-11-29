@@ -3,7 +3,7 @@
 ## JS.Navbar
 
 ### Navbar의 JS 구성
-```
+```javascript
 //3.contact me 클릭시 contact로 이동
 const IntroContactBtn=document.querySelector('.Intro__contact');
 IntroContactBtn.addEventListener('click',()=>{
