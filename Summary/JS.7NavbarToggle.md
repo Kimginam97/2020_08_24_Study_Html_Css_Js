@@ -3,7 +3,7 @@
 ## JS.NavbarToggle
 
 ### NavbarToggle의 JS 구성
-```
+```javascript
 //7.Navbar 토글 버튼
 // Navbar toggle button for small screen
 const navbarToggleBtn=document.querySelector('.navbar__toggle-btn');
@@ -14,7 +14,7 @@ navbarToggleBtn.addEventListener('click',()=>{
 ```
 
 ### NavbarToggle의 CSS 구성
-```
+```css
 .navbar__toggle-btn {
   position: absolute;
   right: 32px;
