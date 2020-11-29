@@ -3,7 +3,7 @@
 ## ActiveWebsite
 
 ### ActiveWebsite CSS구성
-```
+```css
 @media screen and (max-width: 768px) {
   :root {
     /* Font size */
