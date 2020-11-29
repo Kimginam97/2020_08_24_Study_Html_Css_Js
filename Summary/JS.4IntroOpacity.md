@@ -3,7 +3,7 @@
 ## JS.Intro
 
 ### Intro의 JS 구성
-```
+```javascript
 //4.홈화면이 점점 옅어진다
 const Intro =document.querySelector('.Intro__container');
 const IntroHeight=Intro.getBoundingClientRect().height;
