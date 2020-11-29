@@ -3,7 +3,7 @@
 ## JS.Navbar ScrollTo
 
 ### Navbar의 JS 구성
-```
+```javascript
 //2.선택하면 해당 셀렉터 위치에 이동한다
 const navbarMenu = document.querySelector(".navbar__menu");
 
@@ -30,7 +30,7 @@ navbarMenu.addEventListener("click", (event) => {
 ```
 
 ### Navbar의 data-link 변경구성
-```
+```html
 <ul class="navbar__menu">
         <li class="navbar__menu__item" data-link="#Introduce">자기소개</li>
         <li class="navbar__menu__item" data-link="#studys">공부과목</li>
