@@ -3,7 +3,7 @@
 ## JS.Navbar
 
 ### Navbar의 JS 구성
-```
+```javascript
 // 1.navbar 윈도우 스크롤을 이용하여 올라가면 투명 아래로가면 블루로 바꾼다
 const navbar = document.querySelector("#navbar");
 
@@ -23,7 +23,7 @@ document.addEventListener("scroll", () => {
 ```
 
 ### Navbar의 Css 구성
-```
+```css
 #navbar {
   position: fixed;
   width: 100%;
