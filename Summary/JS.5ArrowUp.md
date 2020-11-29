@@ -3,7 +3,7 @@
 ## JS.ArrowUp
 
 ### ArrowUp의 JS 구성
-```
+```javascript
 //5.위로 올라가는 버튼
 const arroUp=document.querySelector('.arrow-up');
 document.addEventListener('scroll',()=>{
@@ -20,7 +20,7 @@ arroUp.addEventListener('click',()=>{
 ```
 
 ### ArrowUp의 CSS 구성
-```
+```css
 /* Scroll */
 .arrow-up {
   position: fixed;
@@ -45,7 +45,7 @@ arroUp.addEventListener('click',()=>{
 ```
 
 ### ArrowUp의 HTML 구성
-```
+```html
 <!-- Arrow Up -->
   <button class="arrow-up">
     <i class="fas fa-arrow-up"></i>
