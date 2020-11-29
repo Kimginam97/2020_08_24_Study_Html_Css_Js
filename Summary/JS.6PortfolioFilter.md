@@ -3,7 +3,7 @@
 ## JS.Filtering
 
 ### Portfolio Filtering의 JS 구성
-```
+```javascript
 const workBtnContainer=document.querySelector('.Portfolio__categories');
 const projectContainer=document.querySelector('.Portfolio__projects');
 const projects=document.querySelectorAll('.project');
@@ -27,7 +27,7 @@ workBtnContainer.addEventListener('click',(e)=>{
 ```
 
 ### Portfolio Filtering의 CSS 구성
-```
+```Css
 .project.invisible {
   display: none;
 }
@@ -42,7 +42,7 @@ workBtnContainer.addEventListener('click',(e)=>{
 ```
 
 ### Portfolio Filtering의 HTML 구성
-```
+```Html
 <!-- Portfolio -->
     <section id="portfolio" class="section">
       <div class="section__container">
